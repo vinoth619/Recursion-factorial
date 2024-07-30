@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+</head>
+<body>
+    <h1>factorial using recursion</h1>
+     <input type="text" name="" id="jo">
+     <button onclick="send()">send</button>
+     <h1 id="show"></h1>
+
+    <script>
+        
+    
+        function fact(n){
+            if(n==0){
+                
+                return 1;
+            }
+            
+    
+             return   n*fact(n-1)
+             }
+              
+         const send=()=>{
+             let n=document.getElementById("jo")
+           n=Number(n.value)
+           console.log(n)
+         document.getElementById("show").innerHTML=(fact(n))+"    : is factorial numper"
+         }
+        
+
+      
+        
+
+    </script>
+    
+</body>
+</html>
